@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind/input.css">
+    <link rel="stylesheet" href="./tailwind/output.css">
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="text-center font-serif font-bold text-3xl py-12">Image Generator</h1>
+        <form action="submit" id="formEl" class="text-center px-2 flex flex-wrap gap-2 justify-center items-center">
+            <input type="search" id="searchEl" placeholder="Try searching something..."
+                class="bg-slate-50 py-2 pl-3 pr-9 text-slate-500 rounded-lg outline-slate-300">
+                <button id="searchBtn" class="bg-blue-500 px-3 py-1 text-white text-lg rounded-lg cursor-pointer">Search</button>
+        </form>
+        <div id="parentDiv"
+            class="grid grid-cols-1 px-3 gap-y-12 md:grid-cols-2 md:max-w-7xl md:mx-auto lg:grid-cols-3 my-10">
+            <div class="bg-slate-200 rounded-xl h-72 w-full sm:max-w-xs sm:mx-auto md:w-full overflow-y-hidden">
+                <img src="https://i.pinimg.com/originals/24/8d/0d/248d0d1b5ce2ac9ea8ddc5e5936ce8f0.jpg" alt="nature" class="w-full h-4/5 rounded-t-lg object-cover">
+                <p class="w-full h-1/5 pl-3 text-lg font-serif text-slate-700 tracking-widest">Lorem ipsum.</p>
+            </div>
+            <div class="bg-slate-200 rounded-xl h-72 w-full sm:max-w-xs sm:mx-auto md:w-full overflow-y-hidden">
+                <img src="https://i.pinimg.com/originals/2c/95/4d/2c954d10113e5df98e3babbd766701cb.jpg" alt="nature" class="w-full h-4/5 rounded-t-lg object-cover">
+                <p class="w-full h-1/5 pl-3 text-lg font-serif text-slate-700 tracking-widest">Lor dolor
+                    sit amet.</p>
+            </div>
+            <div class="bg-slate-200 rounded-xl h-72 w-full sm:max-w-xs sm:mx-auto md:w-full overflow-y-hidden">
+                <img src="https://i.pinimg.com/originals/97/0f/3b/970f3bc43f32d8576c0e5bb73d6f449d.jpg" alt="nature" class="w-full h-4/5 rounded-t-lg object-cover">
+                <p class="w-full h-1/5 pl-3 text-lg font-serif text-slate-700 tracking-widest">
+                    sit amet.</p>
+            </div>
+            <div class="bg-slate-200 rounded-xl h-72 w-full sm:max-w-xs sm:mx-auto md:w-full overflow-y-hidden">
+                <img src="https://i.pinimg.com/originals/3c/55/45/3c55457fee2a871acc3d117052430943.jpg" alt="nature" class="w-full h-4/5 rounded-t-lg object-cover">
+                <p class="w-full h-1/5 pl-3 text-lg font-serif text-slate-700 tracking-widest">Lorem ipsum dolor.</p>
+            </div>
+        </div>
+        <div class="text-center pb-7">
+            <button id="showMore" class="bg-blue-500 px-3 py-1 hidden text-white text-lg rounded-lg cursor-pointer">Show More</button>
+        </div>
+    </section>
+</body>
+
+</html>
